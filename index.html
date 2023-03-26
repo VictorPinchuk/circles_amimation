@@ -7,12 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Canvas</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
-    <h3 id="header"></h3>
-    <canvas></canvas>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__back">
+                <a href="../vp-portal/index.html" class="header__back-link">Back to portal</a>
+            </div>
+            <h3 id="header__title" class="header__title">3 bodies movement under gravity force</h3>
+        </header>
+        <main>
+            <section class="init-graph">
+                <div class="init"></div>
+                <div class="graph">
+                    <canvas id="graph" class="graph"></canvas> 
+                </div>
+            </section>
+           <section class="current">
+           </section>
+        </main>
+        <footer>Footer</footer>
+    </div>
     <script src="script.js">
     </script>
 </body>
