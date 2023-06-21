@@ -1,8 +1,11 @@
 
+.zoom {
+  cursor: zoom-in;
+}
 body {
   height: 100vh;
-width: 100%;
-padding: 0px 10px;
+  width: 100%;
+  padding: 0px 10px;
 
   line-height: 1;
   background: #000717;
@@ -106,21 +109,19 @@ header {
     padding: 5px 0px;
   }
   & input {
-    width: 40px;
+    width: 60px;
     background-color: #000717;
     border-radius: 3px;
     color: #e7e7e7;
     letter-spacing: 1px;
     font-weight: 500;
-    text-align: right;
+    text-align: left;
     transition: 0.3s;
     font-size: 0.8rem;
     &:focus {
       background-color: #2a4375;
     }
-    &.data__exp {
-      width: 20px;
-    }
+
   }
 
   & .string {
@@ -134,16 +135,13 @@ header {
     padding-right: 5px;
     width: 18px;
   }
-  &__e {
-    color: rgb(202, 37, 37);
-    padding: 0px 3px;
-    font-size: 1rem;
-  }
+
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0;
+ margin: 0;
 }
 
 .body {
@@ -160,7 +158,7 @@ input::-webkit-inner-spin-button {
     margin-right: 5px;
   }
   & input {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -186,10 +184,29 @@ input::-webkit-inner-spin-button {
     margin: 0px 5px;
   }
 }
+.time-scale-in-days {
+  margin-top: 20px;
+  border: 1px solid #888888;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & datalist {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__output {
+    margin: 0;
+  }
+}
+
+option {
+  padding: 0;
+  // color: white;
+}
 .description {
   padding: 15px 0px;
   min-height: 140px;
-  
 }
 .graph {
   flex: 1 0 60%;
@@ -215,9 +232,8 @@ canvas {
 }
 footer {
   padding: 8px 0px;
-  
-display: flex;
-flex-direction: column;
-align-items: center;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

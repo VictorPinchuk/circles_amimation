@@ -1,3 +1,8 @@
+.zoom {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -161,13 +166,13 @@ header {
 }
 
 .data input {
-  width: 40px;
+  width: 60px;
   background-color: #000717;
   border-radius: 3px;
   color: #e7e7e7;
   letter-spacing: 1px;
   font-weight: 500;
-  text-align: right;
+  text-align: left;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 0.8rem;
@@ -175,10 +180,6 @@ header {
 
 .data input:focus {
   background-color: #2a4375;
-}
-
-.data input.data__exp {
-  width: 20px;
 }
 
 .data .string {
@@ -196,14 +197,8 @@ header {
   width: 18px;
 }
 
-.data__e {
-  color: #ca2525;
-  padding: 0px 3px;
-  font-size: 1rem;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -229,7 +224,7 @@ input::-webkit-inner-spin-button {
 }
 
 .body__name input {
-  text-align: center;
+  text-align: left;
 }
 
 .name input {
@@ -259,6 +254,37 @@ input::-webkit-inner-spin-button {
 
 .controls button {
   margin: 0px 5px;
+}
+
+.time-scale-in-days {
+  margin-top: 20px;
+  border: 1px solid #888888;
+  padding: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.time-scale-in-days datalist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.time-scale-in-days__output {
+  margin: 0;
+}
+
+option {
+  padding: 0;
 }
 
 .description {

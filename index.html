@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 Canvas</title>
+    <title>3 bodies in space</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap"
         rel="stylesheet" />
@@ -35,175 +35,147 @@
 
                                 <div class="data__body body">
                                     <div class="body__number data__title">Body 1</div>
-                                    <div class="body__name name string">
+                                    <div class="body__name name data__element">
                                         <div class="data__title">Name: </div>
-                                        <input type="text" name="name1">
+                                        <input type="text" name="name">
                                     </div>
                                     <div class="body__radius radius data__element">
-                                        <div class="data__title">Radius (km):</div>
-                                        <div class="string ">
-                                            <input type="number" name="radius1">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp"
-                                                name="radius1exp">
-                                        </div>
+                                        <div class="data__title">Radius (m):</div>
+                                        <input class="data__value" type="number" name="radius">
                                     </div>
                                     <div class="body__mass mass data__element">
-                                        <div class="data__title">Mass (mln tons):</div>
-                                        <div class="string">
-                                            <input type="number" name="mass1">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp"
-                                                name="mass1exp">
-                                        </div>
+                                        <div class="data__title">Mass (kg):</div>
+                                        <input type="number" name="mass">
                                     </div>
                                     <div class="body__position position data__element">
-                                        <div class="data__title">Position (km):</div>
+                                        <div class="data__title">Position (m):</div>
                                         <div class="string ">
                                             <div class="data__text">X: </div>
-                                            <input type="number" name="x1">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp"
-                                                name="x1exp">
+                                            <input class="data__value" type="number" name="x">
                                         </div>
                                         <div class="string ">
                                             <div class="data__text">Y: </div>
-                                            <input type="number" name="y1">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="y1exp">
+                                            <input class="data__value" type="number" name="y">
                                         </div>
                                     </div>
                                     <div class="body__velocity veloscity data__element">
-                                        <div class="data__title">Velocity (km/s):</div>
+                                        <div class="data__title">Velocity (m/s):</div>
                                         <div class="string">
                                             <div class="data__text">Vx: </div>
-                                            <input type="number" name="vx1">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="vx1exp">
+                                            <input class="data__value" type="number" name="vx">
                                         </div>
                                         <div class="string ">
                                             <div class="data__text">Vy: </div>
-                                            <input type="number" name="vy1">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="vy1exp">
+                                            <input class="data__value" type="number" name="vy">
                                         </div>
+                                    </div>
+                                    <div class="string">
+                                        <div class="data__title">Color: </div>
+                                        <input type="color" name="color">
                                     </div>
                                 </div>
 
                                 <div class="data__body body">
                                     <div class="body__number data__title">Body 2</div>
-                                    <div class="body__name name string">
+                                    <div class="body__name name">
                                         <div class="data__title">Name: </div>
-                                        <input type="text" name="name2">
+                                        <input type="text" name="name">
                                     </div>
                                     <div class="body__radius radius data__element">
-                                        <div class="data__title">Radius (km):</div>
-                                        <div class="string ">
-                                            <input type="number" name="radius2">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="radius2exp">
-                                        </div>
+                                        <div class="data__title">Radius (m):</div>
+                                        <input class="data__value" type="number" name="radius">
                                     </div>
                                     <div class="body__mass mass data__element">
-                                        <div class="data__title">Mass (mln tons):</div>
-                                        <div class="string">
-                                            <input type="number" name="mass2">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="mass2exp">
-                                        </div>
+                                        <div class="data__title">Mass (kg):</div>
+                                        <input type="number" name="mass">
                                     </div>
                                     <div class="body__position position data__element">
-                                        <div class="data__title">Position (km):</div>
+                                        <div class="data__title">Position (m):</div>
                                         <div class="string ">
                                             <div class="data__text">X: </div>
-                                            <input type="number" name="x2">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="x2exp">
+                                            <input class="data__value" type="number" name="x">
                                         </div>
                                         <div class="string ">
                                             <div class="data__text">Y: </div>
-                                            <input type="number" name="y2">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="y2exp">
+                                            <input class="data__value" type="number" name="y">
                                         </div>
                                     </div>
                                     <div class="body__velocity veloscity data__element">
-                                        <div class="data__title">Velocity (km/s):</div>
+                                        <div class="data__title">Velocity (m/s):</div>
                                         <div class="string">
                                             <div class="data__text">Vx: </div>
-                                            <input type="number" name="vx2">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="vx2exp">
+                                            <input class="data__value" type="number" name="vx">
                                         </div>
                                         <div class="string ">
                                             <div class="data__text">Vy: </div>
-                                            <input type="number" name="vy2">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="vy2exp">
+                                            <input class="data__value" type="number" name="vy">
                                         </div>
+                                    </div>
+                                    <div class="string">
+                                        <div class="data__title">Color: </div>
+                                        <input type="color" name="color">
                                     </div>
                                 </div>
 
                                 <div class="data__body body">
                                     <div class="body__number data__title">Body 3</div>
-                                    <div class="body__name name string">
+                                    <div class="body__name name">
                                         <div class="data__title">Name: </div>
-                                        <input type="text" name="name3">
+                                        <input type="text" name="name">
                                     </div>
                                     <div class="body__radius radius data__element">
-                                        <div class="data__title">Radius (km):</div>
-                                        <div class="string ">
-                                            <input type="number" name="radius3">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="radius3exp">
-                                        </div>
+                                        <div class="data__title">Radius (m):</div>
+                                        <input class="data__value" type="number" name="radius">
                                     </div>
                                     <div class="body__mass mass data__element">
-                                        <div class="data__title">Mass (mln tons):</div>
-                                        <div class="string">
-                                            <input type="number" name="mass3">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="mass3exp">
-                                        </div>
+                                        <div class="data__title">Mass (kg):</div>
+                                        <input type="number" name="mass">
                                     </div>
                                     <div class="body__position position data__element">
-                                        <div class="data__title">Position (km):</div>
+                                        <div class="data__title">Position (m):</div>
                                         <div class="string ">
                                             <div class="data__text">X: </div>
-                                            <input type="number" name="x3">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="x3exp">
+                                            <input class="data__value" type="number" name="x">
                                         </div>
                                         <div class="string ">
                                             <div class="data__text">Y: </div>
-                                            <input type="number" name="y3">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="y3exp">
+                                            <input class="data__value" type="number" name="y">
                                         </div>
                                     </div>
                                     <div class="body__velocity veloscity data__element">
-                                        <div class="data__title">Velocity (km/s):</div>
+                                        <div class="data__title">Velocity (m/s):</div>
                                         <div class="string">
                                             <div class="data__text">Vx: </div>
-                                            <input type="number" name="vx3">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="vx3exp">
+                                            <input class="data__value" type="number" name="vx">
                                         </div>
                                         <div class="string ">
                                             <div class="data__text">Vy: </div>
-                                            <input type="number" name="vy3">
-                                            <div class="data__e">E</div>
-                                            <input type="number" step="1" min="0" max="99" class="data__exp" name="vy3exp">
+                                            <input class="data__value" type="number" name="vy">
                                         </div>
                                     </div>
+                                    <div class="string">
+                                        <div class="data__title">Color: </div>
+                                        <input type="color" name="color">
+                                    </div>
                                 </div>
-                                
+
                             </div>
                         </form>
                     </div>
-                    <div class="description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magni est ea unde itaque quis sit quas. Exercitationem officia, facere nisi nulla aliquam eos distinctio dolorum eius a consequuntur autem.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, repudiandae dolore beatae ipsa sit laudantium facilis odio nostrum quas sunt accusamus quos error alias ex vitae excepturi officia! Nesciunt, quibusdam.
+                    <div class="time-scale-in-days">
+                        <label for="time-scale-in-days-input" class="time-scale-in-days__label">
+                            <span> Time scale:</span>
+                            <span id="time-scale-in-days-output"></span>
+                            <span> days in 1 sec</span>
+                        </label>
+                        <input type="range" id="time-scale-in-days-input" min="0" max="100" step="1" step="10" value="20"
+                            list="markers" class="time-scale-in-days__input">
+                        <datalist id="markers">
+                            <option value="" label="" id="time-scale-in-days-min"></option>
+                            <option value="" label="" id="time-scale-in-days-max"></option>
+                        </datalist>
+                    </div>
+                    <div class="description" id='info'>Info:
                     </div>
                     <div class="controls">
                         <button class="controls__play" id="playBtn">PLAY</button>
@@ -227,10 +199,10 @@
         </main>
         <footer>Footer</footer>
     </div>
+    <!-- <script src="script.js">
+    </script> -->
     <script src="script.js">
     </script>
-       <!-- <script src="test.js">
-    </script> -->
 </body>
 
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Input fields to array</h1>
+    <form action="#" method="send">
+        <input type="text" name="inp1" value="one">
+        <input type="text" name="inp1" value="two">
+        <input type="text" name="inp2" value="three">
+        <input type="text" name="inp2" value="four">
+        <button type="submit">SUBMIT</button>
+    </form>
+    <script>
+        const inputArray1 = document.getElementsByName('inp1');
+        const inputArray2 = document.getElementsByName('inp2');
+
+
+        inputArray1.forEach(element => {
+            console.log(element.value)
+        });
+        inputArray2.forEach(element => {
+            console.log(element.value)
+        });
+
+
+
+    </script>
+</body>
+
+</html>
